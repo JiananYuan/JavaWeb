@@ -24,6 +24,20 @@ Enumeration it = req.getHeaderNames();
 
 与Http请求的使用流程差不多：`PrintWriter out = resp.getWriter();`
 
+### 来自服务器的响应状态码
+
+- public void setStatus ( int statusCode )
+
+- public void sendRedirect(String url)
+
+- public void sendError(int code, String message)
+
+### Section 会话
+
+Servlet 提供了 HttpSession 接口，该接口提供了一种跨多个页面请求或访问网站时识别用户以及存储有关用户信息的方式。
+
+Servlet 容器使用这个接口来创建一个 HTTP 客户端和 HTTP 服务器之间的 session 会话。会话持续一个指定的时间段，跨多个连接或页面请求。
+
 
 
 
