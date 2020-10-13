@@ -38,6 +38,10 @@ Servlet 提供了 HttpSession 接口，该接口提供了一种跨多个页面�
 
 Servlet 容器使用这个接口来创建一个 HTTP 客户端和 HTTP 服务器之间的 session 会话。会话持续一个指定的时间段，跨多个连接或页面请求。
 
+### 自动刷新
+
+`response.setIntHeader("Refresh", 5);`
+
 
 
 
